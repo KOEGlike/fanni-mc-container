@@ -1,0 +1,51 @@
+[15:21:54] [main/INFO]: Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
+[15:21:54] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
+[15:21:56] [main/INFO]: Loading 4 mods:
+	- fabricloader 0.16.10
+	   \-- mixinextras 0.4.1
+	- java 21
+	- minecraft 1.21.4
+[15:21:57] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/data/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[15:22:38] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[15:23:17] [main/INFO]: Loaded 1370 recipes
+[15:23:17] [main/INFO]: Loaded 1481 advancements
+[15:23:18] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[15:23:18] [Server thread/INFO]: Loading properties
+[15:23:18] [Server thread/INFO]: Default game type: SURVIVAL
+[15:23:18] [Server thread/INFO]: Generating keypair
+[15:23:18] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:23:19] [Server thread/INFO]: Using epoll channel type
+[15:23:20] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15:23:20] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[15:23:20] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[15:23:20] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[15:23:20] [Server thread/INFO]: Preparing level "world"
+[15:23:25] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:23:26] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:23:26] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:23:26] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[15:23:26] [Server thread/INFO]: Time elapsed: 1717 ms
+[15:23:27] [Server thread/INFO]: Done (6.171s)! For help, type "help"
+[15:23:27] [Server thread/INFO]: Starting remote control listener
+[15:23:27] [Server thread/INFO]: Thread RCON Listener started
+[15:23:27] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[15:24:27] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[15:24:49] [Server thread/INFO]: KOEGlike[/172.19.0.1:37600] logged in with entity id 22 at (471.05930840789193, 126.0, 262.87042795806457)
+[15:24:49] [Server thread/INFO]: KOEGlike joined the game
+[15:24:50] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2686ms or 53 ticks behind
+[15:25:00] [Server thread/INFO]: KOEGlike lost connection: Disconnected
+[15:25:00] [Server thread/INFO]: KOEGlike left the game
+[15:25:05] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[15:25:05] [Server thread/INFO]: [Rcon: Stopping the server]
+[15:25:05] [Server thread/INFO]: Stopping server
+[15:25:05] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[15:25:05] [Server thread/INFO]: Saving players
+[15:25:05] [Server thread/INFO]: Saving worlds
+[15:25:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:25:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[15:25:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[15:25:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:25:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:25:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:25:06] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[15:25:06] [Server thread/INFO]: Thread RCON Listener stopped
