@@ -48,6 +48,11 @@ _version = 3
 	#
 	# If true, clients will receive real-time LOD updates for chunks outside the client's render distance.
 	enableRealTimeUpdates = true
+	#
+	# Enables adaptive transfer speed based on client performance.
+	# If true, DH will automatically adjust transfer rate to minimize connection lag.
+	# If false, transfer speed will remain fixed.
+	enableAdaptiveTransferSpeed = false
 
 	[server.experimental]
 		#
@@ -106,20 +111,20 @@ _version = 3
 		# UNCOMPRESSED 
 		# Should only be used for testing, is worse in every way vs [LZ4].
 		# Expected Compression Ratio: 1.0
-		# Estimated average DTO read speed: 1.64 milliseconds
-		# Estimated average DTO write speed: 12.44 milliseconds
+		# Estimated average DTO read speed: 3.25 milliseconds
+		# Estimated average DTO write speed: 5.99 milliseconds
 		# 
 		# LZ4 
 		# A good option if you're CPU limited and have plenty of hard drive space.
-		# Expected Compression Ratio: 0.36
+		# Expected Compression Ratio: 0.26
 		# Estimated average DTO read speed: 1.85 ms
 		# Estimated average DTO write speed: 9.46 ms
 		# 
 		# LZMA2 
 		# Slow but very good compression.
-		# Expected Compression Ratio: 0.14
-		# Estimated average DTO read speed: 11.89 ms
-		# Estimated average DTO write speed: 192.01 ms
+		# Expected Compression Ratio: 0.2
+		# Estimated average DTO read speed: 13.29 ms
+		# Estimated average DTO write speed: 70.95 ms
 		dataCompression = "LZ4"
 		#
 		# Enabling this will drastically increase chunk processing time
@@ -387,7 +392,9 @@ _version = 3
 
 			[client.advanced.debugging.openGl]
 				#
-				# Requires a reboot to change.
+				# Defines how OpenGL errors are handled. 
+				#  Requires rebooting Minecraft to change. 
+				# Will catch OpenGL errors thrown by other mods.
 				overrideVanillaGLLogger = false
 				#
 				# Defines how OpenGL errors are handled. 
@@ -403,6 +410,14 @@ _version = 3
 				# Massively reduces FPS. 
 				# Should only be used if mysterious EXCEPTION_ACCESS_VIOLATION crashes are happening in DH's rendering code for troubleshooting.
 				validateBufferIdsBeforeRendering = false
+				#
+				# If true each Open GL error will only be logged once. 
+				# Enabling this may cause some error logs to be missed. 
+				# Does nothing if overrideVanillaGLLogger is set to false. 
+				#  
+				# Generally this can be kept as 'true' to prevent log spam. 
+				# However, Please set this to 'false' if a developer needs your log to debug a GL issue.
+				onlyLogGlErrorsOnce = true
 
 			[client.advanced.debugging.exampleConfigScreen]
 				shortTest = "69"
